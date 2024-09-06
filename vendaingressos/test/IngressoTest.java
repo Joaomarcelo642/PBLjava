@@ -27,7 +27,7 @@ public class IngressoTest {
         assertTrue(ingresso.isAtivo());
     }
 
-    /*@Test
+    @Test
     public void testCancelarIngresso() {
         Calendar calendar = Calendar.getInstance();
         calendar.set(2024, Calendar.SEPTEMBER, 10);
@@ -82,4 +82,4 @@ public class IngressoTest {
         assertEquals(ingresso1, ingresso2);
         assertEquals(ingresso1.hashCode(), ingresso2.hashCode());
     }
-}*/
+}

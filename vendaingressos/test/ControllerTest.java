@@ -1,4 +1,4 @@
-/*import java.util.Date;
+import java.util.Date;
 import java.util.Calendar;
 import java.util.List;
 
@@ -70,7 +70,7 @@ public class ControllerTest {
         assertTrue(usuario.getIngressos().contains(ingresso));
     }
 
-    @Test
+    /*@Test
     public void testCancelarCompra() {
         Controller controller = new Controller();
         Usuario usuario = new Usuario("johndoe", "senha123", "John Doe", "12345678901", "john.doe@example.com", false);
@@ -128,5 +128,5 @@ public class ControllerTest {
         List<Ingresso> ingressos = controller.listarIngressosComprados(usuario);
 
         assertEquals(1, ingressos.size());
-    }
-}*/
+    }*/
+}
