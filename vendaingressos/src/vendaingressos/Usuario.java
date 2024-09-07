@@ -11,6 +11,7 @@ public class Usuario {
     private String cpf;
     private String email;
     private Boolean admin;
+    private List<Ingresso> ingressos = new ArrayList<>();
 
     // Criar construtores
     public Usuario(String login, String senha, String nome, String cpf, String email, Boolean admin) {
@@ -72,6 +73,14 @@ public class Usuario {
         this.admin = admin;
     }
 
+    public List<Ingresso> getIngressos() {
+        return ingressos;
+    }
+
+    public void setIngressos(List<Ingresso> ingressos) {
+        this.ingressos = ingressos;
+    }
+
     //Metodos para testes
    public Boolean isAdmin() {
         return admin;
@@ -82,6 +91,7 @@ public class Usuario {
             return true;
         }else return false;
    }
+
 
     @Override
     public boolean equals(Object o) {

@@ -70,10 +70,10 @@ public class ControllerTest {
         assertTrue(usuario.getIngressos().contains(ingresso));
     }
 
-    /*@Test
+    @Test
     public void testCancelarCompra() {
         Controller controller = new Controller();
-        Usuario usuario = new Usuario("johndoe", "senha123", "John Doe", "12345678901", "john.doe@example.com", false);
+        Usuario usuario = controller.cadastrarUsuario("johndoe", "senha123", "John Doe", "12345678901", "john.doe@example.com", false);
 
         Calendar calendar = Calendar.getInstance();
         calendar.set(2024, Calendar.SEPTEMBER, 10);
@@ -128,5 +128,5 @@ public class ControllerTest {
         List<Ingresso> ingressos = controller.listarIngressosComprados(usuario);
 
         assertEquals(1, ingressos.size());
-    }*/
+    }
 }

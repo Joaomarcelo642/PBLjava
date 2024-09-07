@@ -27,19 +27,48 @@ public class Controller {
         }
     }
 
-
-    public void listarEventosDisponiveis() {
-        for (Evento evento : eventos) {
-            System.out.println(evento);
+    
+    public void adicionarAssentoEvento(String nomeEvento, String assento){
+        for(Evento evento : eventos){
+            if(evento.getNome().equals(nomeEvento)){
+                evento.adicionarAssento(assento);
+                return;
+            }
         }
     }
 
-    public void comprarIngresso(Evento evento) {
-
+    public Ingresso comprarIngresso(Usuario usuario, String nomeEvento, String assento){
+        for(Evento evento : eventos){
+            if(evento.getNome().equals(nomeEvento) && evento.isAtivo()){
+                if(evento.getAssentosDisponiveis().contains(assento)){
+                    Ingresso ingresso = new Ingresso(evento, 1, assento);
+                    usuario.getIngressos().add(ingresso);
+                    return ingresso;
+                }else return null;
+            }else return null;
+        }return null;
     }
 
+    public Boolean cancelarCompra(Usuario usuario, Ingresso ingresso){
+        for(Usuario usuario1 : usuarios){
+            if(usuario1.equals(usuario)){
+                if(usuario.getIngressos().contains(ingresso)){
+                    boolean cancelado = ingresso.cancelar();
+                    if(cancelado) {
+                        usuario.getIngressos().remove(ingresso);
+                        ingresso.getEvento().adicionarAssento(ingresso.getAssento());
+                        return cancelado;
+                    }
+                }else return false;
+            }else return false;
+        }return null;
+    }
 
-    public void cancelarCompraIngresso() {
+    public List<Evento> listarEventosDisponiveis() {
+        return eventos;
+    }
 
+    public List<Ingresso> listarIngressosComprados(Usuario usuario) {
+        return usuario.getIngressos();
     }
 }
