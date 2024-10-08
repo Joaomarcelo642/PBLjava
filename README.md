@@ -5,15 +5,15 @@ Este projeto é um sistema de venda de ingressos, desenvolvido na linguagem Java
 ## Sumário
 
 - [Funcionalidades](#funcionalidades)
-- [Estrutura do Projeto](estrutura-do-projeto)
-    - [Classes Principais](classes-pricipais)
-        - [Usuario](usuario)
-        - [Ingresso](ingresso)
-        - [Evento](evento)
-        - [Controller](controller)
-- [Requisitos](requisitos)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+    - [Classes Principais](#classes-pricipais)
+        - [Usuario](#usuario)
+        - [Ingresso](#ingresso)
+        - [Evento](#evento)
+        - [Controller](#controller)
+- [Requisitos](#requisitos)
 - [Como Executar](#como-executar)
-- [Autor}(autor)
+- [Autor](#autor)
 
 ## Funcionalidades
 
