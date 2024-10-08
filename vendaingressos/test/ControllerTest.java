@@ -13,6 +13,7 @@ import vendaingressos.Evento;
 import vendaingressos.Ingresso;
 import vendaingressos.Usuario;
 
+//DATAS ALTERADAS PARA O ANO DE 2025
 
 public class ControllerTest {
 
@@ -22,7 +23,7 @@ public class ControllerTest {
         Usuario admin = controller.cadastrarUsuario("admin", "senha123", "Admin User", "00000000000", "admin@example.com", true);
 
         Calendar calendar = Calendar.getInstance();
-        calendar.set(2024, Calendar.SEPTEMBER, 10);
+        calendar.set(2025, Calendar.SEPTEMBER, 10);
         Date data = calendar.getTime();
 
         Evento evento = controller.cadastrarEvento(admin, "Show de Rock", "Banda XYZ", data);
@@ -39,7 +40,7 @@ public class ControllerTest {
         Usuario usuario = controller.cadastrarUsuario("johndoe", "senha123", "John Doe", "12345678901", "john.doe@example.com", false);
 
         Calendar calendar = Calendar.getInstance();
-        calendar.set(2024, Calendar.SEPTEMBER, 10);
+        calendar.set(2025, Calendar.SEPTEMBER, 10);
         Date data = calendar.getTime();
 
         Exception exception = assertThrows(SecurityException.class, () -> {
@@ -55,7 +56,7 @@ public class ControllerTest {
         Usuario usuario = new Usuario("johndoe", "senha123", "John Doe", "12345678901", "john.doe@example.com", false);
 
         Calendar calendar = Calendar.getInstance();
-        calendar.set(2024, Calendar.SEPTEMBER, 10);
+        calendar.set(2025, Calendar.SEPTEMBER, 10);
         Date data = calendar.getTime();
 
         Usuario admin = controller.cadastrarUsuario("admin", "senha123", "Admin User", "00000000000", "admin@example.com", true);
@@ -76,7 +77,7 @@ public class ControllerTest {
         Usuario usuario = controller.cadastrarUsuario("johndoe", "senha123", "John Doe", "12345678901", "john.doe@example.com", false);
 
         Calendar calendar = Calendar.getInstance();
-        calendar.set(2024, Calendar.SEPTEMBER, 10);
+        calendar.set(2025, Calendar.SEPTEMBER, 10);
         Date data = calendar.getTime();
 
         Usuario admin = controller.cadastrarUsuario("admin", "senha123", "Admin User", "00000000000", "admin@example.com", true);
@@ -96,11 +97,11 @@ public class ControllerTest {
         Usuario admin = controller.cadastrarUsuario("admin", "senha123", "Admin User", "00000000000", "admin@example.com", true);
 
         Calendar calendar1 = Calendar.getInstance();
-        calendar1.set(2024, Calendar.SEPTEMBER, 10);
+        calendar1.set(2025, Calendar.SEPTEMBER, 10);
         Date data1 = calendar1.getTime();
 
         Calendar calendar2 = Calendar.getInstance();
-        calendar2.set(2024, Calendar.SEPTEMBER, 15);
+        calendar2.set(2025, Calendar.SEPTEMBER, 15);
         Date data2 = calendar2.getTime();
 
         controller.cadastrarEvento(admin, "Show de Rock", "Banda XYZ", data1);
@@ -117,7 +118,7 @@ public class ControllerTest {
         Usuario usuario = new Usuario("johndoe", "senha123", "John Doe", "12345678901", "john.doe@example.com", false);
 
         Calendar calendar = Calendar.getInstance();
-        calendar.set(2024, Calendar.SEPTEMBER, 10);
+        calendar.set(2025, Calendar.SEPTEMBER, 10);
         Date data = calendar.getTime();
 
         Usuario admin = controller.cadastrarUsuario("admin", "senha123", "Admin User", "00000000000", "admin@example.com", true);

@@ -10,12 +10,14 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 
+//DATAS ALTERADAS PARA O ANO DE 2025
+
 public class EventoTest {
 
     @Test
     public void testCriarEvento() {
         Calendar calendar = Calendar.getInstance();
-        calendar.set(2024, Calendar.SEPTEMBER, 10);
+        calendar.set(2025, Calendar.SEPTEMBER, 10);
         Date data = calendar.getTime();
 
         Evento evento = new Evento("Show de Rock", "Banda XYZ", data);
@@ -29,7 +31,7 @@ public class EventoTest {
     @Test
     public void testAdicionarAssento() {
         Calendar calendar = Calendar.getInstance();
-        calendar.set(2024, Calendar.SEPTEMBER, 10);
+        calendar.set(2025, Calendar.SEPTEMBER, 10);
         Date data = calendar.getTime();
 
         Evento evento = new Evento("Show de Rock", "Banda XYZ", data);
@@ -42,7 +44,7 @@ public class EventoTest {
     @Test
     public void testRemoverAssento() {
         Calendar calendar = Calendar.getInstance();
-        calendar.set(2024, Calendar.SEPTEMBER, 10);
+        calendar.set(2025, Calendar.SEPTEMBER, 10);
         Date data = calendar.getTime();
 
         Evento evento = new Evento("Show de Rock", "Banda XYZ", data);
@@ -56,7 +58,7 @@ public class EventoTest {
     @Test
     public void testEventoAtivo() {
         Calendar calendar = Calendar.getInstance();
-        calendar.set(2024, Calendar.SEPTEMBER, 10);
+        calendar.set(2025, Calendar.SEPTEMBER, 10);
         Date data = calendar.getTime();
 
         Evento evento = new Evento("Show de Rock", "Banda XYZ", data);
