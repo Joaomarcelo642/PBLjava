@@ -5,7 +5,7 @@ Este projeto é um sistema de venda de ingressos, desenvolvido na linguagem Java
 ## Sumário
 
 - [Funcionalidades](#funcionalidades)
-- [Estrutura de Projeto](estrutura-de-projeto)
+- [Estrutura do Projeto](estrutura-do-projeto)
     - [Classes Principais](classes-pricipais)
         - [Usuario](usuario)
         - [Ingresso](ingresso)
